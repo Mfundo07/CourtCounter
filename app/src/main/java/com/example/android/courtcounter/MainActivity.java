@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
-     * Increase the score for Team A by 1 point.
+     * Increase the score for Home Team  by 1 point.
      */
     public void addOneForTeamA(View v) {
         scoreTeamA += 1;
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the score for Team A by 2 points.
+     * Increase the score for the Home Team  by 2 points.
      */
     public void addTwoForTeamA(View v) {
         scoreTeamA += 2;
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the score for Team A by 3 points.
+     * Increase the score for the Home Team by 3 points.
      */
     public void addThreeForTeamA(View v) {
         scoreTeamA += 3;
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Displays the given score for Team A.
+     * Displays the given score for the Home Team.
      */
     public void displayForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
@@ -49,20 +49,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Displays the given score for Team B.
+     * Displays the given score for Away Team .
      */
     public void displayForTeamB(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
 
+    /**
+     * Increases the score for the Away Team by 1 point
+     */
     public void addOneForTeamB(View v) {
         scoreTeamB += 1;
         displayForTeamB(scoreTeamB);
     }
 
     /**
-     * Increase the score for Team B by 2 points.
+     * Increase the score for the Away Team  by 2 points.
      */
     public void addTwoForTeamB(View v) {
         scoreTeamB += 2;
@@ -70,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the score for Team B by 3 points.
+     * Increase the score for Away Team by 3 points.
      */
     public void addThreeForTeamB(View v) {
         scoreTeamB += 3;
@@ -78,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Resets the score to 0 points for both team A and B
+     * Resets the score to 0 points for both Home and Away Team.
      */
     public void resetScore(View v){
         scoreTeamA = 0;
