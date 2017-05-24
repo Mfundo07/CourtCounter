@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the score for Team A by 2 points.
+     * Increase the score for Team B by 2 points.
      */
     public void addTwoForTeamB(View v) {
         scoreTeamB += 2;
@@ -70,13 +70,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Increase the score for Team A by 3 points.
+     * Increase the score for Team B by 3 points.
      */
     public void addThreeForTeamB(View v) {
         scoreTeamB += 3;
         displayForTeamB(scoreTeamB);
     }
 
+    /**
+     * Resets the score to 0 points for both team A and B
+     */
     public void resetScore(View v){
         scoreTeamA = 0;
         scoreTeamB = 0;
